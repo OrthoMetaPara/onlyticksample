@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Onlytick classifieds</title>
+    <!-- google hosted jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- main script file -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!-- custom fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="assets/styles/font-awesome-4.6.3/css/font-awesome.css" media="screen" title="no title" charset="utf-8">
+    <!-- master stylesheet -->
+    <link rel="stylesheet" href="assets/styles/master.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body class="normal toggle">
+    <header>
+      <div class="toggle-handle">≡</div>
+      <a href="index.html"><img src="http://www.onlytick.com/Content/wp-content/uploads/onlytick.png" alt="logo" /></a>
+      <form class="search" action="index.html" method="post">
+        <input type="text" name="" value="" placeholder="Search">
+      </form>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="jumbotron">
+      <ul class="list">
+        <li id="sale">
+          <h4>Property for Sale</h4>
+          <span><i class="fa fa-home" aria-hidden="true"></i></span>
+          <ul class="inner-list">
+            <li><a href="#">Lands</a></li>
+            <li><a href="#">Villas</a></li>
+            <li><a href="#">Apartments</a></li>
+            <li><a href="#">Townhouse</a></li>
+            <li><a href="#">Penthouse</a></li>
+            <li><a href="#">Buildings</a></li>
+            <li><a href="#">Towers</a></li>
+            <li><a href="#">Hotels</a></li>
+          </ul>
+        </li>
+        <li id="rent">
+          <h4>Property for Rent</h4>
+          <span><i class="fa fa-home" aria-hidden="true"></i></span>
+          <span id="money"><i class="fa fa-money" aria-hidden="true"></i></span>
+          <ul class="inner-list">
+            <li><a href="#">Villas</a></li>
+            <li><a href="#">Apartments</a></li>
+            <li><a href="#">Offices</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Lands</a></li>
+            <li><a href="#">TownHouse</a></li>
+            <li><a href="#">Dublex</a></li>
+            <li><a href="#">Penthouse</a></li>
+          </ul>
+        </li>
+        <li id="vehicles">
+          <h4>Vehicles</h4>
+          <span><i class="fa fa-car" aria-hidden="true"></i></span>
+          <ul class="inner-list">
+            <li><a href="#">Cars for Sale</a></li>
+            <li><a href="#">Cars for Rent</a></li>
+            <li><a href="#">Motorcycles</a></li>
+            <li><a href="#">Car plates for Sale</a></li>
+            <li><a href="#">Spare parts &amp; Accessories</a></li>
+            <li><a href="#">Tyres</a></li>
+            <li><a href="#">Boats</a></li>
+            <li><a href="#">Heavy vehicles</a></li>
+          </ul>
+        </li>
+        <li id="jobs">
+          <h4>Jobs</h4>
+          <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+          <ul class="inner-list">
+            <li><a href="#">Accounting</a></li>
+            <li><a href="#">Airlines &amp; Aviation</a></li>
+            <li><a href="#">Architecture &amp; Interior design</a></li>
+            <li><a href="#">Art &amp; Entertainment</a></li>
+            <li><a href="#">Automotive</a></li>
+            <li><a href="#">Banking &amp; Finance</a></li>
+            <li><a href="#">Beauty</a></li>
+            <li><a href="#">Business development</a></li>
+          </ul>
+        </li>
+        <li id="classifieds">
+          <h4>Classifieds</h4>
+          <span><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
+          <ul class="inner-list">
+            <li><a href="#">Antiques</a></li>
+            <li><a href="#">Art &amp; Drawing</a></li>
+            <li><a href="#">Babysitting</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Business &amp; Industrial</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Mobile &amp; Accessories</a></li>
+            <li><a href="#">Apparels</a></li>
+          </ul>
+        </li>
+        <li id="services">
+          <h4>Services</h4>
+          <span><i class="fa fa-users" aria-hidden="true"></i></span>
+          <ul class="inner-list">
+            <li><a href="#">Accounting</a></li>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Baby care</a></li>
+            <li><a href="#">Banking</a></li>
+            <li><a href="#">Beauty &amp; Massage</a></li>
+            <li><a href="#">Business &amp; Money</a></li>
+            <li><a href="#">Car services</a></li>
+            <li><a href="#">Catering &amp; Restaurants</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="tweets">
+      <h4>Tweets &amp; Testimonials</h4><span>⤜✍⤛</span>
+      <!-- tweets -->
+      <aside class="widget col-md-4 widget_reviews">
+        <div class="widget-section-title"></div>
+          <ul>
+            <li>
+              <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 520px; height: 250px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="664393175897923584" title="Twitter Timeline">
+              </iframe>
+                <script>!function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+                    if (d.getElementById(id)) return t;
+                      js = d.createElement(s);
+                      js.id = id;
+                      js.src = "https://platform.twitter.com/widgets.js";
+                      fjs.parentNode.insertBefore(js, fjs);
+
+                      t._e = [];
+                      t.ready = function(f) {
+                      t._e.push(f);
+                      };
+                      return t;
+                      }(document, "script", "twitter-wjs");
+                </script>
+            </li>
+          </ul>
+        </aside>
+      <!-- tweets end -->
+    </div>
+    <aside class="top-slider">
+      <span><a href="index.html" title="Go to top">⟫</a></span>
+    </aside>
+    <footer>
+      <article class="soc-med">
+        <p>Stay connected</p>
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        </ul>
+      </article>
+
+      <article class="subscribe">
+        <h4>Subscribe to stay updated</h4>
+        <form class="sub" action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="E-mail address">
+        </form>
+      </article>
+
+      <article class="copyright">
+        <p>&copy; 2016 Winsoft solutions. All rights reserved</p>
+      </article>
+    </footer>
+  </body>
+</html>

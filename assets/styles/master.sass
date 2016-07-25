@@ -1,0 +1,248 @@
+// importing bourbon
+@import "bourbon/bourbon"
+// initial reset
+*
+    margin: auto
+    padding: 0
+body
+    font-family: 'Poiret One', cursive
+.toggle
+    position: relative
+    left: 125px
+    transition: left ease .5s
+    overflow-x: hidden
+.normal
+    left: 0
+    transition: left ease .5s
+header
+    text-align: center
+    .toggle-handle
+        position: absolute
+        top: 20px
+        left: 20px
+        font-size: 36px
+        cursor: pointer
+    form
+        position: absolute
+        top: 40px
+        right: 20px
+        input
+            padding: 10px
+            border: 1px solid #7effca
+            border-radius: 5px
+    nav
+        .menu
+            list-style-type: none
+            background: linear-gradient(rgba(38, 162, 128, 0.85), rgba(46, 188, 195, 0.93))
+            padding-top: 100px
+            position: absolute
+            top: 0
+            left: -125px
+            @include size(auto 100vh)
+            text-align: left
+            letter-spacing: .2em
+            li
+                display: block
+                margin: 1px 0
+                padding: 10px
+                // background: #000
+                a
+                    text-decoration: none
+                    color: #138a65
+                    font-weight: bold
+            li:hover
+                background: linear-gradient(#132225, #2a6d6a)
+                transition: background ease 2s
+.jumbotron
+    @include size(auto)
+    // border: 1px solid #000
+    margin: 10px auto
+    text-align: center
+    .list
+        list-style-type: none
+        li
+            display: inline-block
+            // border-radius: 4px
+            @include size(214px auto)
+            margin: auto -2px
+            overflow: hidden
+            h4
+                // background: #310a31
+                color: #fff
+                text-align: center
+                padding: 5px
+                background: rgba(236, 35, 72, 0.65)
+                margin: auto 1px
+                transform: rotate(45deg)
+                position: relative
+                top: 36px
+                right: -57px
+            span
+                font: 78px normal
+                color: rgba(255, 255, 255, 0.37)
+                padding: 5px
+                opacity: .7
+        // li:hover
+        //     transform: scale(2, 1)
+        //     transform-origin: left
+        //     transition: transform ease 1s
+        #sale
+            background: rgba(255, 37, 81, 0.83)
+            ul.inner-list
+                list-style-type: none
+                padding: 10px
+                li
+                    display: block
+                    padding: 5px
+                    text-align: left
+                    a
+                        text-decoration: none
+                        color: #fff
+                li:hover
+                    text-decoration: underline
+        #rent
+            background: rgba(111, 9, 111, 0.77)
+            #money
+                font-size: 28px
+                position: relative
+                top: -35px
+                left: -25px
+            ul
+                list-style-type: none
+                padding: 10px
+                li
+                    display: block
+                    padding: 5px
+                    text-align: left
+                    a
+                        text-decoration: none
+                        color: #fff
+                li:hover
+                    text-decoration: underline
+        #vehicles
+            background: rgba(255, 87, 34, 0.88)
+            ul
+                list-style-type: none
+                padding: 10px
+                li
+                    display: block
+                    padding: 5px
+                    text-align: left
+                    a
+                        text-decoration: none
+                        color: #fff
+                li:hover
+                    text-decoration: underline
+        #jobs
+            background: rgba(14, 136, 21, 0.86)
+            ul
+                list-style-type: none
+                padding: 10px
+                li
+                    display: block
+                    padding: 5px
+                    text-align: left
+                    a
+                        text-decoration: none
+                        color: #fff
+                li:hover
+                    text-decoration: underline
+        #classifieds
+            background: rgba(53, 195, 189, 0.88)
+            ul
+                list-style-type: none
+                padding: 10px
+                li
+                    display: block
+                    padding: 5px
+                    text-align: left
+                    a
+                        text-decoration: none
+                        color: #fff
+                li:hover
+                    text-decoration: underline
+        #services
+            background: rgba(29, 11, 175, 0.88)
+            ul
+                list-style-type: none
+                padding: 10px
+                li
+                    display: block
+                    padding: 5px
+                    text-align: left
+                    a
+                        text-decoration: none
+                        color: #fff
+                li:hover
+                    text-decoration: underline
+.tweets
+    text-align: center
+    color: #6495ed
+    span
+        font-size: 28px
+
+.top-slider
+    position: absolute
+    right: 20px
+    bottom: 0px
+    transform: rotate(270deg)
+    color: cadetblue
+    cursor: pointer
+    span
+        font-size: 28px
+        a
+            text-decoration: none
+            color: inherit
+
+footer
+    // clear: both
+    float: left
+    text-align: center
+    background: rgba(66, 214, 190, 0.32)
+    @include size(100% 140px)
+    // position: absolute
+    // left: 0
+    // right: 0
+    article
+        width: 24%
+        display: inline-block
+    .soc-med
+        position: absolute
+        left: 0
+        padding-top: 20px
+        p
+            color: #5f9ea0
+            font-weight: bold
+            padding: 10px
+        ul
+            list-style-type: none
+            li
+                display: inline-block
+                margin: 5px
+                a
+                    color: #5f9ea0
+                    padding-bottom: 2px
+                a:hover
+                    border-bottom: 2px solid #5f9ea0
+        p, ul
+            display: inline
+
+    .subscribe
+        // float: right
+        position: absolute
+        // right: 0
+        padding-top: 20px
+        line-height: 1.5em
+        h4
+            color: #5f9ea0
+        .sub
+            input
+                padding: 10px
+                border: 0
+
+    .copyright
+        p
+            position: relative
+            top: 100px
+            font-size: 13px
+            // padding-top: 20px
